@@ -11,11 +11,11 @@ import java.util.Scanner;   //importing the scanner
 
     public class BigMac{    
     //main method
-    public static void main(String] args){
+    public static void main(String[] args){
         Scanner myScanner; 
         myScanner = new Scanner(System.in);
         
-        System.out.print("Enter the number of Big Macs (integer . 0): ");
+        System.out.print("Enter the number of Big Macs (integer > 0): ");
         int nBigMacs = myScanner.nextInt();
         
         System.out.print("Enter the cost of a Big Mac(in the form xx.xx): ");
@@ -31,12 +31,13 @@ import java.util.Scanner;   //importing the scanner
         
         cost$ = nBigMacs*bigMac$*(1+taxRate);
         //get the whole amount, dropping decimal fraction 
-        dollars = (int)cost4;
+        dollars = (int)cost$;
         //get dimes amount
         dimes = (int)(cost$*10)%10;
-        pennies = (int)9cost4*100)%10;
-        System.out.println("The total cost of " nBigMacs+" BigMacs, at $"+bigMac$+" per BigMac, with a sales tax of "+ (int)(taxRate*100) + "%, is $"+dollars+"."+dimes+pennies);
+        pennies = (int)(cost$*100)%10;
+        System.out.println("The total cost of " +nBigMacs+" BigMacs, at $"+bigMac$+" per BigMac, with a sales tax of "+ (int)(taxRate*100) + "%, is $"+dollars+'.'+dimes+pennies);
         
         
     
+    }
 }
