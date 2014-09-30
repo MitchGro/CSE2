@@ -26,12 +26,12 @@ public class BigMacAgain{
                System.out.print("Wrong! Try again.");
                return;  //leaves the program
           
-            
+           }
             }else{
             System.out.print("Thats not even a number");
                return;  //leaves the program
              }
-       }
+       
                 System.out.print("Do you want an order of fries (Y/y/N/n)?: ");
                 char decision=myScanner.nextChar();
         
@@ -58,4 +58,3 @@ public class BigMacAgain{
         
     
     
-}
