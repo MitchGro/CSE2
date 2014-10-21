@@ -11,7 +11,7 @@ import java.util.Scanner;
 
 public class BoolaBoola{
     public static void main(String [] args){
-        Random rand = new Random();;
+        Random rand = new Random();
         Scanner myScanner;
         myScanner = new Scanner(System.in);
         
@@ -88,7 +88,7 @@ public class BoolaBoola{
                 break;
                     }
           
-        //assings x a true or false value based on the previous random assingment           
+        //assings x a true or false value based on the previous random assignment   
         if(place1.equals("&&")&&place2.equals("&&")){
             x= flag1&&flag2&&flag3;
         }else if(place1.equals("&&")&&place2.equals("||")){
