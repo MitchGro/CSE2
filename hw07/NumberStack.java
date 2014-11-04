@@ -20,6 +20,10 @@ public class NumberStack{   //class
         for(int n=1; n<(number+1); n++){
             //prints precise amount of rows
             for(int i=0;i<n;i++){
+                for(int k = number - n; k > 0; k--){
+                    
+                    System.out.print(" ");
+                }
                 //prints precise amount of certain digit
                 for(int j=1; j<(2*n);j++){
                 //prints value
@@ -27,6 +31,10 @@ public class NumberStack{   //class
                 }
                 System.out.println();
             }
+            for(int k = number - n; k > 0; k--){
+                    
+                    System.out.print(" ");
+                }
             //prints amount of dashes
             for(int k=1; k<(2*n);k++){
                 System.out.print("-");

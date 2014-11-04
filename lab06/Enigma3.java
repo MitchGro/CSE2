@@ -52,7 +52,7 @@ public class Enigma3{
         
       default:
         n-=3;
-        k-=5;   //5-5=0
+        k-=6;   //5-5=0
     }
      out+=1/n + 1/k;   
     System.out.println(out);
