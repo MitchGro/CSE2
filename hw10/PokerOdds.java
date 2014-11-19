@@ -1,3 +1,9 @@
+/*Mitchell Grohoski
+CSE2
+november 18th
+-poker card game that displays pairs and statistics of 10000 plays
+*/
+
 import java.util.Random;
 import java.util.Scanner;
 public class PokerOdds{
@@ -17,7 +23,7 @@ public class PokerOdds{
      }
      
      for(int i = 0; i<myHand.length; i++){
-        double randCard = Math.random()*52;
+        double randCard = Math.random()*myList.length;
         index = (int)randCard;
         index = myHand[i];
         
