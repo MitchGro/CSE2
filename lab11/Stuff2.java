@@ -4,39 +4,48 @@ public class Stuff2{
         
         Scanner myScan = new Scanner(System.in);
         int size = 10;
+        int sum = 0;
         int array[]= new int[size];
         
+      System.out.println("Enter the first digit of the array: ");
+      array[0] = myScan.nextInt();
       
-        int sum = 0;
-        int c =0;
-        int x = 0;
-        int min = array[0];
-        System.out.print("Please enter 10 ints: ");
-        while(myScan.hasNextInt()){
-            x = myScan.nextInt();
-            array[c] = x;
-            sum = sum+ x;
-            c++;
-  
-            
-          if(c == 10){
-              break;
+      for(int j = 1; j<10; j++){
+          System.out.print("Enter the next digit: ");
+          array[j] = myScan.nextInt();
+      }
+      
+      int max = array[0];
+      for(int i  = 0; i < array.length; i++){
+          if(array[i] >max){
+              max  = array[i];
           }
-        }
-        
-        for(int l = 1; l<array.length; l++){
-            if(array[l] <min){
-                min = array[l];
-                index = l;
-            }
-            }
-        }
+      }
       
-    
-        for(int i = 0; i< array.length; i++){
-            System.out.println(array[i]);
-        }
-        System.out.print(sum);
+      System.out.print("THe largest value is: " + max);
+      System.out.println();
+      int min  = array[0];
+      for(int k = 0; k < array.length; k++){
+          if(array[k] < min){
+              min = array[k];
+          }
+      }
+      System.out.print("The smallest value is: " + min);
+      System.out.println();
+      
+      for(int a = 0; a < array.length; a++){
+          sum+= array[a];
+      }
+      System.out.print("Sum: "+ sum);
+      System.out.println();
+      
+      int[] flipme = new int[10];
+      for(int b = 0; b < array.length; b++){
+          flipme[b] = array[(array.length - 1) - b];
+      }
+      
+      for(int c = 0; c <array.length; c++){
+          System.out.println(array[c] + "    "+ flipme[c]);
+      }
+      }
     }
-}
-    
